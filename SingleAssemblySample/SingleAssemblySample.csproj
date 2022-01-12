@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\submodules\cs-x39-util\X39.Util\X39.Util.csproj" />
+      <ProjectReference Include="..\X39.MonoBus\X39.MonoBus.csproj" />
+    </ItemGroup>
+
+</Project>

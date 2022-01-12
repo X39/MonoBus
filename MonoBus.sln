@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X39.MonoBus", "X39.MonoBus\X39.MonoBus.csproj", "{A890621F-648A-439E-86EF-A64FF72DC6E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleAssemblySample", "SingleAssemblySample\SingleAssemblySample.csproj", "{F96E590C-B2B3-42C0-A9E1-1743016A4C61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{BCC64A6C-8F11-43CA-B9DF-BDA5903FB5FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A890621F-648A-439E-86EF-A64FF72DC6E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A890621F-648A-439E-86EF-A64FF72DC6E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A890621F-648A-439E-86EF-A64FF72DC6E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A890621F-648A-439E-86EF-A64FF72DC6E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96E590C-B2B3-42C0-A9E1-1743016A4C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96E590C-B2B3-42C0-A9E1-1743016A4C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96E590C-B2B3-42C0-A9E1-1743016A4C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96E590C-B2B3-42C0-A9E1-1743016A4C61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F96E590C-B2B3-42C0-A9E1-1743016A4C61} = {BCC64A6C-8F11-43CA-B9DF-BDA5903FB5FF}
+	EndGlobalSection
+EndGlobal
