@@ -4,15 +4,22 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+
+        <PackageId>X39.MonoBus</PackageId>
+        <Authors>X39</Authors>
+        <Title>X39.MonoBus</Title>
+        <PackageDescription>Monolithic message bus implementation, designed for flexibility in mind.</PackageDescription>
+        <SupportUrl>https://github.com/X39/MonoBus/issues</SupportUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/X39/MonoBus</RepositoryUrl>
+        <PackageLicenseExpression>LGPL-3.0-only</PackageLicenseExpression>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <DefaultLanguage>en-US</DefaultLanguage>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="JetBrains.Annotations" Version="2021.3.0" />
-      <PackageReference Include="X39.Util" Version="1.0.0.8" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\submodules\cs-x39-util\X39.Util\X39.Util.csproj" />
+      <PackageReference Include="X39.Util" Version="1.0.0.13" />
     </ItemGroup>
 
 </Project>

@@ -35,7 +35,7 @@ public static class Program
 
     private static async Task StartConsumingAsync(IBusHub busHub, string logAs, EQueueMode queueMode, CancellationToken cancellationToken)
     {
-        await using var consumer = await busHub.CreateConsumerAsync<SamplePayload, MonoConsumerConfiguration>(
+        await using var consumer = await busHub.CreateMonolithicConsumerAsync<SamplePayload>(
             (config) => config.QueueMode = queueMode);
         var count = 0;
         
@@ -72,7 +72,7 @@ public static class Program
     private static int ProducerMessageCounter;
     private static async Task StartProducingAsync(IBusHub busHub, string logAs, CancellationToken cancellationToken)
     {
-        await using var producer = await busHub.CreateProducerAsync<SamplePayload>();
+        await using var producer = await busHub.CreateMonolithicProducerAsync<SamplePayload>();
         
         // While the bus-hub reports as alive (aka: Not disposed/closed)
         while (busHub.IsAlive)

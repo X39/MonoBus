@@ -15,7 +15,11 @@ internal class MonoBusHub : IBusHub
 
     public IEnumerable<IBroker> Brokers => _readerWriterLock.ReadLocked(() => _brokers.Values.ToArray());
 
-    public ValueTask<IProducer<T>> CreateProducerAsync<T>(CancellationToken cancellationToken) where T : notnull
+    public ValueTask<IProducer<T>> CreateProducerAsync<T, TConfiguration>(
+        Action<TConfiguration> configure,
+        CancellationToken cancellationToken)
+        where T : notnull
+        where TConfiguration : notnull
         => ValueTask.FromResult<IProducer<T>>(new MonoProducer<T>(this));
 
     public ValueTask<IConsumer<T>> CreateConsumerAsync<T, TConfiguration>(

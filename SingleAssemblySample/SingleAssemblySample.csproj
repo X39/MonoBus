@@ -8,8 +8,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\submodules\cs-x39-util\X39.Util\X39.Util.csproj" />
       <ProjectReference Include="..\X39.MonoBus\X39.MonoBus.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="X39.Util" Version="1.0.0.13" />
     </ItemGroup>
 
 </Project>
